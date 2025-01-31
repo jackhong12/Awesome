@@ -9,15 +9,6 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-%%---------------------------------------------------------
-%  \cventry
-%    {DevOps Engineer} % Job title
-%    {Dunamu Inc.} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Sep. 2023 - Present} % Date(s)
-%    {
-%    }
-
 %---------------------------------------------------------
   \cventry
     {Senior Research and Development Engineer} % Job title
@@ -26,97 +17,15 @@
     {Dec. 2022 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provided new features of NetTran, a gate-level netlist translator, to fulfill customers' requirements.}
-        \item {Improved NetTran's efficiency by designing a high-scalability and disk-friendly threading architecture, resulting in a 76\% reduction in the writing stage (overall 34\% reduction).}
-        \item {Boosted the performance of ICV\_Netlist, a layout-to-schematic translator, by addressing bottlenecks, reducing runtime by 71\%.}
-        \item {Designed a thread-safe and high-scalability hash table, avoiding lock contention by leveraging fine-grained locking and atomic operations, boosting the performance by 4.32X.}
+        \item {Developed new features in NetTran, a gate-level netlist translator, to meet customer requirements and improve product functionality.}
+        \item {Diagnosed and resolved customer-reported bugs, delivering prompt and effective solutions to ensure seamless operation.}
+        \item {Enhanced ICV\_Netlist’s performance by addressing bottlenecks and mitigating I/O overhead with in-memory caching, resulting in a 71\% reduction in runtime.}
+        \item {Optimized NetTran’s performance by designing a high-scalability and disk-friendly threading architecture, reducing writing stage time by 76\% and overall runtime by 34\%.}
+        \item {Implemented a thread-safe and high-scalability hash table, minimizing lock contention through fine-grained locking and atomic operations, achieving a 4.32× performance boost.}
+        \item {Collaborated with AE and QA teams to design a new debugging file in NetTran, helping customers quickly identify and resolve issues.}
+        \item {Refactored YACC and LEX code in NetTran, enabling parallel input file parsing to enhance performance.}
       \end{cvitems}
     }
-
-%%---------------------------------------------------------
-%  \cventry
-%    {Site Reliability Engineer} % Job title
-%    {Danggeun Market Inc.} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Feb. 2021 - Mar. 2021} % Date(s)
-%    {
-%    }
-%
-%%---------------------------------------------------------
-%  \cventry
-%    {Founding Member \& Director of Infrastructure Division} % Job title
-%    {Kasa} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Jun. 2018 - Jan. 2021} % Date(s)
-%    {
-%      \begin{cvitems} % Description(s) of tasks/responsibilities
-%        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-%        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-%        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-%        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-%        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-%        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-%        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-%        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-%        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
-%      \end{cvitems}
-%    }
-%
-%%---------------------------------------------------------
-%  \cventry
-%    {Software Architect} % Job title
-%    {Omnious. Co., Ltd.} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Jun. 2017 - May. 2018} % Date(s)
-%    {
-%      \begin{cvitems} % Description(s) of tasks/responsibilities
-%        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-%        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-%        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-%        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-%        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-%        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-%      \end{cvitems}
-%    }
-%
-%%---------------------------------------------------------
-%  \cventry
-%    {Co-founder \& Software Engineer} % Job title
-%    {PLAT Corp.} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Jan. 2016 - Jun. 2017} % Date(s)
-%    {
-%      \begin{cvitems} % Description(s) of tasks/responsibilities
-%        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-%        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-%        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-%      \end{cvitems}
-%    }
-%
-%%---------------------------------------------------------
-%  \cventry
-%    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-%    {R.O.K Cyber Command, MND} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Aug. 2014 - Apr. 2016} % Date(s)
-%    {
-%      \begin{cvitems} % Description(s) of tasks/responsibilities
-%        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-%      \end{cvitems}
-%    }
-%
-%%---------------------------------------------------------
-%  \cventry
-%    {Software Engineer} % Job title
-%    {ShitOne Corp.} % Organization
-%    {Seoul, S.Korea} % Location
-%    {Dec. 2011 - Feb. 2012} % Date(s)
-%    {
-%      \begin{cvitems} % Description(s) of tasks/responsibilities
-%        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-%        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-%      \end{cvitems}
-%    }
 
 %---------------------------------------------------------
 \end{cventries}
