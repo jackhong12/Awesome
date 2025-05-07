@@ -667,10 +667,10 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+    \ifempty{#1#4} 
+      {\ifempty{#2#3}{}{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\}}
+      {\ifempty{#2#3}{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+         \entrypositionstyle{#1} & \entrydatestyle{#4} \\}}
     \ifstrempty{#5}
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
