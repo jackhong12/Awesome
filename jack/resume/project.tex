@@ -1,0 +1,49 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Project}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {} % Job title
+    {OSDI} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed a lightweight operating system on the Raspberry Pi 3.}
+        \item {Built a minimal shell interface over UART communication for user interaction on the SoC.}
+        \item {Implemented a UART-based bootloader to load kernel images into appropriate memory locations.}
+        \item {Configured the exception vector table and provided basic system calls read, write and sleep.}
+        \item {Developed a memory management system, including a buddy allocator and a startup allocator.}
+        \item {Designed and implemented a scheduler with context switching and register preservation via the stack.}
+        \item {Achieved process isolation and virtual memory management using the MMU.}
+        \item {Github: https://github.com/jackhong12/OSDI}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {} % Job title
+    {Face Tracker} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Designed and built a device that automatically adjusts a smartphone's orientation to keep the user centered in the camera frame.}
+        \item {Developed high-priority interrupt service routines (ISRs) on the PIC18F4520 microcontroller to manage UART communication and receive real-time user position data.}
+        \item {Implemented low-priority ISRs to decode motor encoder signals and generate PWM outputs for accurate pose control.}
+        \item {Applied PID control theory to ensure smooth and responsive velocity control of a DC motor.}
+        \item {Designed the mechanical structure using CAD software and fabricated the device using a CNC milling machine.}
+        \item {Github: https://github.com/jackhong12/face-tracker}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
